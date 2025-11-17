@@ -1,0 +1,10 @@
+<form method="post">
+  {% csrf_token %}
+  <input type="text" name="user" placeholder="이름">
+  <select name="mode">
+    <option value="auto">자동</option>
+    <option value="manual">수동</option>
+  </select>
+  <input type="text" name="numbers" placeholder="1,5,10,23,33,42 (수동)">
+  <button type="submit">구매하기</button>
+</form>
